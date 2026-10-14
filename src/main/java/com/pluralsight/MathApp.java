@@ -48,8 +48,8 @@ public class MathApp {
 
         int hours = days * hoursInADAy;
         int minutes = hours * minutesInAnHour;
-        int seconds = minutes * secondsInAMinute;
-        int milliseconds = seconds * millisecondsInASecond;
+        int seconds = Math.multiplyExact(minutes, secondsInAMinute);
+        long milliseconds = Math.multiplyExact(seconds, millisecondsInASecond);
 
         System.out.println("There are " + minutes + " minutes in " + days + " days");
         System.out.println("There are " + milliseconds + " milliseconds in " + days + " days");
