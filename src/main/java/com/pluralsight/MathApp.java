@@ -34,5 +34,24 @@ public class MathApp {
         double num2 = -3.8;
         double absNum2 = Math.abs(num2);
         System.out.println("The absolute value of the variable is: " + absNum2);
+
+        // 7
+        double randNum = Math.random();
+        System.out.println("The randomly generated number is:" + randNum);
+
+        // 8
+        int days = 24;
+        int hoursInADAy = 24;
+        int minutesInAnHour = 60;
+        int secondsInAMinute = 60;
+        int millisecondsInASecond = 1000;
+
+        int hours = days * hoursInADAy;
+        int minutes = hours * minutesInAnHour;
+        int seconds = minutes * secondsInAMinute;
+        int milliseconds = seconds * millisecondsInASecond;
+
+        System.out.println("There are " + minutes + " minutes in " + days + " days");
+        System.out.println("There are " + milliseconds + " milliseconds in " + days + " days");
     }
 }
