@@ -3,16 +3,16 @@ package com.pluralsight;
 public class MathApp {
     public static void main(String[] args) {
         // 1
-        int bobSalary = 45699;
-        int garySalary = 67799;
-        int highestSalary = Math.max(bobSalary, garySalary);
-        System.out.println("The highest salary is: " + highestSalary);
+        double bobSalary = 45699.00;
+        double garySalary = 67799.00;
+        double highestSalary = Math.max(bobSalary, garySalary);
+        System.out.println("The highest salary is: $" + highestSalary);
 
         // 2
-        int carPrice = 28500;
-        int truckPrice = 78870;
-        int lowestPrice = Math.min(carPrice, truckPrice);
-        System.out.println("The cheaper vehicle costs: " + lowestPrice);
+        double carPrice = 28500.00;
+        double truckPrice = 78870.00;
+        double lowestPrice = Math.min(carPrice, truckPrice);
+        System.out.println("The cheaper vehicle costs: $" + lowestPrice);
 
         // 3
         double radius = 7.25;
